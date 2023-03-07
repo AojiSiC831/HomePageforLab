@@ -103,8 +103,7 @@
   <h2>「VESTA」で可視化することができるX線構造解析データや、物質構造のWeb3Dを公開しています。<br>
 
 以下の検索バーでは、掲載している化学物質を直接検索することができます。
-
-	<style>
+<style>
 .search-bar {
   display: flex;
   align-items: center;
@@ -124,6 +123,7 @@
   border: 1px solid #ccc;
   border-radius: 20px 0 0 20px;
   outline: none;
+  box-sizing: border-box; /* 追加 */
 }
 
 .search-bar button[type="submit"] {
@@ -135,8 +135,11 @@
   border-radius: 0 20px 20px 0;
   font-size: 16px;
   cursor: pointer;
+  box-sizing: border-box; /* 追加 */
+  margin-left: -1px; /* 追加 */
 }
 </style>
+
 
 <div class="search-bar">
   <form action="/search" method="get">
